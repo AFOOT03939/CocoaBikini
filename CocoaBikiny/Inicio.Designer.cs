@@ -41,7 +41,7 @@
             this.titulo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Contenedor = new System.Windows.Forms.Panel();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,7 +108,7 @@
             this.iconMenuItem1.IconColor = System.Drawing.Color.Black;
             this.iconMenuItem1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem1.Name = "iconMenuItem1";
-            this.iconMenuItem1.Size = new System.Drawing.Size(164, 22);
+            this.iconMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.iconMenuItem1.Text = "Productos";
             // 
             // iconMenuItem2
@@ -117,7 +117,7 @@
             this.iconMenuItem2.IconColor = System.Drawing.Color.Black;
             this.iconMenuItem2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconMenuItem2.Name = "iconMenuItem2";
-            this.iconMenuItem2.Size = new System.Drawing.Size(164, 22);
+            this.iconMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.iconMenuItem2.Text = "Categorías";
             // 
             // menureportes
@@ -171,7 +171,7 @@
             this.menuusuarios.ImageTransparentColor = System.Drawing.Color.White;
             this.menuusuarios.Margin = new System.Windows.Forms.Padding(10);
             this.menuusuarios.Name = "menuusuarios";
-            this.menuusuarios.Size = new System.Drawing.Size(150, 50);
+            this.menuusuarios.Size = new System.Drawing.Size(122, 50);
             this.menuusuarios.Text = "Usuarios";
             this.menuusuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.menuusuarios.Click += new System.EventHandler(this.iconMenuItem1_Click);
@@ -221,18 +221,13 @@
             this.label2.Text = "Usuario:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // Contenedor
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(787, 31);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 18);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "LblUsuario";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Contenedor.Location = new System.Drawing.Point(0, 146);
+            this.Contenedor.Name = "Contenedor";
+            this.Contenedor.Size = new System.Drawing.Size(917, 344);
+            this.Contenedor.TabIndex = 5;
             // 
             // Inicio
             // 
@@ -240,7 +235,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(917, 490);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.Contenedor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.titulo);
@@ -273,7 +268,7 @@
         private FontAwesome.Sharp.IconMenuItem iconMenuItem1;
         private FontAwesome.Sharp.IconMenuItem iconMenuItem2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel Contenedor;
     }
 }
 

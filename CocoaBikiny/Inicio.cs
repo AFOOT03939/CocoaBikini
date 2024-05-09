@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using FontAwesome.Sharp;
 
 using CapaEntidad;
+using System.Runtime.Remoting.Channels;
 
 namespace CocoaBikiny
 {
@@ -54,7 +55,7 @@ namespace CocoaBikiny
 
         private void iconMenuItem1_Click(object sender, EventArgs e)
         {
-
+            AbrirFormulario((IconMenuItem)sender, new frmUsuarios());
         }
 
         private void abrirform(IconMenuItem menu, Form formuario)
@@ -80,7 +81,7 @@ namespace CocoaBikiny
         private void Inicio_Load(object sender, EventArgs e)
         {
 
-            lblUsuario.Text = usuarioActual.NombreCompleto();
+            
         }
 
         private void AbrirFormulario(IconMenuItem menu, Form formulario)
@@ -92,19 +93,9 @@ namespace CocoaBikiny
                 MenuActivo.BackColor = Color.White;
             }
 
-            menu.BackColor = Color.Silver;
+            menu.BackColor = Color.HotPink;
             MenuActivo = menu;
 
         }
-
-        private void menuusuarios_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario((IconMenuItem)sender, new frmUsuarios());
-
-        }
-
-
-
-
     }
 }
