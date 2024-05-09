@@ -47,7 +47,7 @@ namespace CocoaBikiny
 
             if (oUsuario != null)
             {
-                Inicio form = new Inicio();
+                Inicio form = new Inicio(oUsuario);
                 form.Show();
                 this.Hide();
                 form.FormClosing += frmClosing;
@@ -72,6 +72,11 @@ namespace CocoaBikiny
         }
 
         private void User_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
         {
 
         }

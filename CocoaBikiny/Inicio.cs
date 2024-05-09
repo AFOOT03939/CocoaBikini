@@ -9,13 +9,21 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
 
+using CapaEntidad;
+
 namespace CocoaBikiny
 {
     public partial class Inicio : Form
-
     {
-        public Inicio()
+
+        private static Usuario usuarioActual;
+        private static IconMenuItem MenuActivo = null;
+        private static Form FormularioActivo = null;
+
+        public Inicio(Usuario objusuario)
         {
+            usuarioActual = objusuario;
+
             InitializeComponent();
         }
 
@@ -58,5 +66,45 @@ namespace CocoaBikiny
         {
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Inicio_Load(object sender, EventArgs e)
+        {
+
+            lblUsuario.Text = usuarioActual.NombreCompleto();
+        }
+
+        private void AbrirFormulario(IconMenuItem menu, Form formulario)
+        {
+
+            if (MenuActivo != null)
+            {
+                
+                MenuActivo.BackColor = Color.White;
+            }
+
+            menu.BackColor = Color.Silver;
+            MenuActivo = menu;
+
+        }
+
+        private void menuusuarios_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconMenuItem)sender, new frmUsuarios());
+
+        }
+
+
+
+
     }
 }
