@@ -1,1 +1,2 @@
-# CocoaBikiny
+# CocoaBikini
+Proyecto CocoaBikini
