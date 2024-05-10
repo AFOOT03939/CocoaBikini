@@ -28,61 +28,45 @@ namespace CocoaBikiny
             InitializeComponent();
         }
 
-        private void iconMenuItem3_Click(object sender, EventArgs e)
+        private void menuventas_Click(object sender, EventArgs e)  /*MENU VENTAS */
         {
 
         }
 
-        private void iconMenuItem2_Click(object sender, EventArgs e)
+        private void submenuRegistrarVenta_Click(object sender, EventArgs e) /* SUBMENU REGISTRAR VENTA*/
         {
+            AbrirFormulario(menuventas, new frmVentas());
+        }
+        private void submenuDetalleVenta_Click(object sender, EventArgs e) /* SUBMENU DETALLE DE VENTA*/
+        {
+            AbrirFormulario(menuventas, new frmDetalleVentas());
 
         }
-
-        private void menu_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void submenuProductos_Click(object sender, EventArgs e)/* SUBMENU PRODUCTOS */
         {
-
+            AbrirFormulario(menuproductos, new frmProducto());
+        }
+       
+        private void submenuCategorias_Click(object sender, EventArgs e)/* SUBMENU CATEGORIAS */
+        {
+            AbrirFormulario(menuproductos, new frmCategoria());
+        }
+        private void menureportes_Click(object sender, EventArgs e) /* MENU REPORTES */
+        {
+            AbrirFormulario((IconMenuItem)sender, new frmReportes());
         }
 
-        private void menucodigodebarras_Click(object sender, EventArgs e)
+        private void menucodigodebarras_Click(object sender, EventArgs e) /* MENU CODIGOS DE BARRAS */
         {
-
+            AbrirFormulario((IconMenuItem)sender, new frmCodigodebarras());
         }
-
-        private void menutop_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void iconMenuItem1_Click(object sender, EventArgs e)
+        
+        private void menuusuarios_Click(object sender, EventArgs e)/* MENU USUARIOS */
         {
             AbrirFormulario((IconMenuItem)sender, new frmUsuarios());
         }
 
-        private void abrirform(IconMenuItem menu, Form formuario)
-        {
 
-        }
-
-        private void menuventas_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Inicio_Load(object sender, EventArgs e)
-        {
-
-            
-        }
 
         private void AbrirFormulario(IconMenuItem menu, Form formulario)
         {
@@ -90,11 +74,25 @@ namespace CocoaBikiny
             if (MenuActivo != null)
             {
                 
-                MenuActivo.BackColor = Color.White;
+                MenuActivo.BackColor = Color.PaleVioletRed; /* HAY QUE ESCOGER AQUI COLORES, CUANDO SE CAMBIA DE MENU, EL MENU ANTERIOR SE PINTA DEL COLOR QUE SE PONGA AQUI*/
             }
 
-            menu.BackColor = Color.HotPink;
+            menu.BackColor = Color.Black; /* Este es el color del que se pinta el menu actual al que se le da click*/
             MenuActivo = menu;
+
+            if (FormularioActivo != null)
+            {
+                FormularioActivo.Close();
+            }
+
+            FormularioActivo = formulario;
+            formulario.TopLevel = false;
+            formulario.FormBorderStyle = FormBorderStyle.None;
+            formulario.Dock = DockStyle.Fill;
+            formulario.BackColor = Color.Coral;
+
+            Contenedor.Controls.Add(formulario);
+            formulario.Show();
 
         }
     }

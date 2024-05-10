@@ -44,7 +44,6 @@ namespace CocoaBikiny
             List<Usuario> listaUsuarios = new UsuarioCN().Listar(); // Obtener la lista de usuarios.
             Usuario oUsuario = listaUsuarios.FirstOrDefault(u => u.password == contra.Text && u.Nombre == User.Text); // Buscar el usuario específico en la lista.
 
-
             if (oUsuario != null)
             {
                 Inicio form = new Inicio(oUsuario);
