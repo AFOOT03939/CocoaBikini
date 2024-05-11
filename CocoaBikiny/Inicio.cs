@@ -96,5 +96,14 @@ namespace CocoaBikiny
 
         }
 
+        private void Inicio_Load(object sender, EventArgs e)
+        {
+            lblusuario.Text = usuarioActual.Nombre;
+        }
+
+        private void lblUsuarioActual_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

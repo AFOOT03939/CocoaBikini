@@ -44,7 +44,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Contenedor = new System.Windows.Forms.Panel();
-            this.lblUsuarioActual = new System.Windows.Forms.Label();
+            this.lblusuario = new System.Windows.Forms.Label();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -253,17 +253,18 @@
             this.Contenedor.Size = new System.Drawing.Size(917, 344);
             this.Contenedor.TabIndex = 5;
             // 
-            // lblUsuarioActual
+            // lblusuario
             // 
-            this.lblUsuarioActual.AutoSize = true;
-            this.lblUsuarioActual.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.lblUsuarioActual.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuarioActual.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblUsuarioActual.Location = new System.Drawing.Point(787, 31);
-            this.lblUsuarioActual.Name = "lblUsuarioActual";
-            this.lblUsuarioActual.Size = new System.Drawing.Size(88, 18);
-            this.lblUsuarioActual.TabIndex = 6;
-            this.lblUsuarioActual.Text = "lblUsuario";
+            this.lblusuario.AutoSize = true;
+            this.lblusuario.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.lblusuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblusuario.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblusuario.Location = new System.Drawing.Point(787, 31);
+            this.lblusuario.Name = "lblusuario";
+            this.lblusuario.Size = new System.Drawing.Size(88, 18);
+            this.lblusuario.TabIndex = 6;
+            this.lblusuario.Text = "lblUsuario";
+            this.lblusuario.Click += new System.EventHandler(this.lblUsuarioActual_Click);
             // 
             // Inicio
             // 
@@ -271,7 +272,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(917, 490);
-            this.Controls.Add(this.lblUsuarioActual);
+            this.Controls.Add(this.lblusuario);
             this.Controls.Add(this.Contenedor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -283,6 +284,7 @@
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Inicio_Load);
             this.menu.ResumeLayout(false);
             this.menu.PerformLayout();
             this.ResumeLayout(false);
@@ -307,7 +309,7 @@
         private System.Windows.Forms.Panel Contenedor;
         private FontAwesome.Sharp.IconMenuItem submenuRegistrarVenta;
         private FontAwesome.Sharp.IconMenuItem submenuDetalleVenta;
-        private System.Windows.Forms.Label lblUsuarioActual;
+        private System.Windows.Forms.Label lblusuario;
     }
 }
 
