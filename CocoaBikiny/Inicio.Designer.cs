@@ -44,6 +44,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.Contenedor = new System.Windows.Forms.Panel();
+            this.lblUsuarioActual = new System.Windows.Forms.Label();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -252,12 +253,25 @@
             this.Contenedor.Size = new System.Drawing.Size(917, 344);
             this.Contenedor.TabIndex = 5;
             // 
+            // lblUsuarioActual
+            // 
+            this.lblUsuarioActual.AutoSize = true;
+            this.lblUsuarioActual.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.lblUsuarioActual.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuarioActual.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblUsuarioActual.Location = new System.Drawing.Point(787, 31);
+            this.lblUsuarioActual.Name = "lblUsuarioActual";
+            this.lblUsuarioActual.Size = new System.Drawing.Size(88, 18);
+            this.lblUsuarioActual.TabIndex = 6;
+            this.lblUsuarioActual.Text = "lblUsuario";
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(917, 490);
+            this.Controls.Add(this.lblUsuarioActual);
             this.Controls.Add(this.Contenedor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -293,6 +307,7 @@
         private System.Windows.Forms.Panel Contenedor;
         private FontAwesome.Sharp.IconMenuItem submenuRegistrarVenta;
         private FontAwesome.Sharp.IconMenuItem submenuDetalleVenta;
+        private System.Windows.Forms.Label lblUsuarioActual;
     }
 }
 
