@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FontAwesome.Sharp;
+using CapaNegocios;
 
 using CapaEntidad;
 using System.Runtime.Remoting.Channels;
@@ -98,6 +99,15 @@ namespace CocoaBikiny
 
         private void Inicio_Load(object sender, EventArgs e)
         {
+            List<Permisos> ListaPermisos = new CN_permiso().Listar(usuarioActual.IDUsuario);
+            foreach (IconMenuItem iconMenu in menu.Items)
+            {
+                bool encontrado = ListaPermisos.Any(m => m.nombre == iconMenu.Name);
+                if(encontrado == false)
+                {
+                    iconMenu.Visible = false;
+                }
+            }
             lblusuario.Text = usuarioActual.Nombre;
         }
 
