@@ -22,16 +22,20 @@ namespace CocoaBikiny
         private static IconMenuItem MenuActivo = null;
         private static Form FormularioActivo = null;
 
-        public Inicio(Usuario objusuario)
+        public Inicio(Usuario objusuario = null)
         {
-            usuarioActual = objusuario;
+            if (objusuario == null)
+            {
+                usuarioActual = new Usuario() {  Nombre = "ADMIN", IDUsuario = 1 };
+            }
+
+            else
+            {
+                usuarioActual = objusuario;
+            }
+
 
             InitializeComponent();
-        }
-
-        private void menuventas_Click(object sender, EventArgs e)  /*MENU VENTAS */
-        {
-
         }
 
         private void submenuRegistrarVenta_Click(object sender, EventArgs e) /* SUBMENU REGISTRAR VENTA*/
@@ -109,11 +113,6 @@ namespace CocoaBikiny
                 }
             }
             lblusuario.Text = usuarioActual.Nombre;
-        }
-
-        private void lblUsuarioActual_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

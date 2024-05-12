@@ -83,7 +83,6 @@
             this.menuventas.Size = new System.Drawing.Size(150, 50);
             this.menuventas.Text = "Ventas";
             this.menuventas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.menuventas.Click += new System.EventHandler(this.menuventas_Click);
             // 
             // submenuRegistrarVenta
             // 
@@ -264,7 +263,6 @@
             this.lblusuario.Size = new System.Drawing.Size(88, 18);
             this.lblusuario.TabIndex = 6;
             this.lblusuario.Text = "lblUsuario";
-            this.lblusuario.Click += new System.EventHandler(this.lblUsuarioActual_Click);
             // 
             // Inicio
             // 
