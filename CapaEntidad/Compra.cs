@@ -6,18 +6,15 @@ using System.Threading.Tasks;
 
 namespace CapaEntidad
 {
-    public class Venta
+    public class Compra
     {
-        public int IdVenta { get; set; }
+        public int IdCompra { get; set; }
         public Usuario oUsuario { get; set; }
+        public Proveedor oProveedor { get; set; }
         public string TipoDocumento { get; set; }
         public string NumeroDocumento { get; set; }
-        public string DocumentoCliente { get; set; }
-        public string NombreCliente { get; set; }
-        public decimal MontoPago { get; set; }
-        public decimal MontoCambio { get; set; }
         public decimal MontoTotal { get; set; }
-        public List<Detalle_Venta> oDetalle_Venta { get; set; }
+        public List<Detalle_Compra> oDetalleCompra { get; set; }
         public string FechaRegistro { get; set; }
     }
 }
