@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNombreDocumento = new System.Windows.Forms.TextBox();
@@ -48,7 +50,6 @@
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.lblDetalleUsuario = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label9 = new System.Windows.Forms.Label();
             this.BtnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.IDUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,6 +60,7 @@
             this.Rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EstadoValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label9 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -270,7 +272,17 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.BtnSeleccionar,
@@ -284,31 +296,28 @@
             this.Estado,
             this.EstadoValor});
             this.dataGridView1.Location = new System.Drawing.Point(267, 123);
+            this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Snow;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.Size = new System.Drawing.Size(754, 325);
             this.dataGridView1.TabIndex = 19;
-            // 
-            // label9
-            // 
-            this.label9.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(262, 62);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(759, 30);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "Lista de Usuarios:";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // BtnSeleccionar
             // 
             this.BtnSeleccionar.HeaderText = "";
             this.BtnSeleccionar.Name = "BtnSeleccionar";
+            this.BtnSeleccionar.ReadOnly = true;
             this.BtnSeleccionar.Width = 30;
             // 
             // IDUsuario
             // 
             this.IDUsuario.HeaderText = "ID Usuario";
             this.IDUsuario.Name = "IDUsuario";
+            this.IDUsuario.ReadOnly = true;
             this.IDUsuario.Visible = false;
             this.IDUsuario.Width = 50;
             // 
@@ -316,47 +325,66 @@
             // 
             this.Documento.HeaderText = "No. Documento";
             this.Documento.Name = "Documento";
+            this.Documento.ReadOnly = true;
             this.Documento.Width = 150;
             // 
             // NombreCompleto
             // 
             this.NombreCompleto.HeaderText = "Nombre Completo";
             this.NombreCompleto.Name = "NombreCompleto";
+            this.NombreCompleto.ReadOnly = true;
             this.NombreCompleto.Width = 180;
             // 
             // Correo
             // 
             this.Correo.HeaderText = "Correo Electronico";
             this.Correo.Name = "Correo";
+            this.Correo.ReadOnly = true;
             this.Correo.Width = 150;
             // 
             // Contraseña
             // 
             this.Contraseña.HeaderText = "Contraseña";
             this.Contraseña.Name = "Contraseña";
+            this.Contraseña.ReadOnly = true;
             this.Contraseña.Visible = false;
             // 
             // IDRol
             // 
             this.IDRol.HeaderText = "IDRol";
             this.IDRol.Name = "IDRol";
+            this.IDRol.ReadOnly = true;
             this.IDRol.Visible = false;
             // 
             // Rol
             // 
             this.Rol.HeaderText = "Rol";
             this.Rol.Name = "Rol";
+            this.Rol.ReadOnly = true;
             // 
             // Estado
             // 
             this.Estado.HeaderText = "Estado";
             this.Estado.Name = "Estado";
+            this.Estado.ReadOnly = true;
             // 
             // EstadoValor
             // 
             this.EstadoValor.HeaderText = "EstadoValor";
             this.EstadoValor.Name = "EstadoValor";
+            this.EstadoValor.ReadOnly = true;
             this.EstadoValor.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.Color.MistyRose;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(262, 62);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(759, 30);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Lista de Usuarios:";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtID
             // 
@@ -397,6 +425,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "frmUsuarios";
             this.Text = "frmUsuarios";
+            this.Load += new System.EventHandler(this.frmUsuarios_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
