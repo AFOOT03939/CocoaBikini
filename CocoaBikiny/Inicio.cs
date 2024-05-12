@@ -22,19 +22,11 @@ namespace CocoaBikiny
         private static IconMenuItem MenuActivo = null;
         private static Form FormularioActivo = null;
 
-        public Inicio(Usuario objusuario = null)
+        public Inicio(Usuario objusuario)
         {
-            if (objusuario == null)
-            {
-                usuarioActual = new Usuario() {  Nombre = "ADMIN", IDUsuario = 1 };
-            }
-
-            else
-            {
-                usuarioActual = objusuario;
-            }
-
-
+            
+            usuarioActual = objusuario;
+           
             InitializeComponent();
         }
 
@@ -94,7 +86,7 @@ namespace CocoaBikiny
             formulario.TopLevel = false;
             formulario.FormBorderStyle = FormBorderStyle.None;
             formulario.Dock = DockStyle.Fill;
-            formulario.BackColor = Color.Coral;
+            formulario.BackColor = Color.MistyRose;
 
             Contenedor.Controls.Add(formulario);
             formulario.Show();

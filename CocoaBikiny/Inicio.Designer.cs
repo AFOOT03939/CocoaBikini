@@ -59,7 +59,7 @@
             this.menuusuarios});
             this.menu.Location = new System.Drawing.Point(0, 72);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(917, 74);
+            this.menu.Size = new System.Drawing.Size(1057, 74);
             this.menu.TabIndex = 0;
             this.menu.Text = "menuStrip1";
             // 
@@ -80,7 +80,7 @@
             this.menuventas.ImageTransparentColor = System.Drawing.Color.White;
             this.menuventas.Margin = new System.Windows.Forms.Padding(10);
             this.menuventas.Name = "menuventas";
-            this.menuventas.Size = new System.Drawing.Size(150, 50);
+            this.menuventas.Size = new System.Drawing.Size(190, 50);
             this.menuventas.Text = "Ventas";
             this.menuventas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -121,7 +121,7 @@
             this.menuproductos.ImageTransparentColor = System.Drawing.Color.White;
             this.menuproductos.Margin = new System.Windows.Forms.Padding(10);
             this.menuproductos.Name = "menuproductos";
-            this.menuproductos.Size = new System.Drawing.Size(150, 50);
+            this.menuproductos.Size = new System.Drawing.Size(190, 50);
             this.menuproductos.Text = "Productos";
             this.menuproductos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -159,7 +159,7 @@
             this.menureportes.ImageTransparentColor = System.Drawing.Color.White;
             this.menureportes.Margin = new System.Windows.Forms.Padding(10);
             this.menureportes.Name = "menureportes";
-            this.menureportes.Size = new System.Drawing.Size(150, 50);
+            this.menureportes.Size = new System.Drawing.Size(180, 50);
             this.menureportes.Text = "Reportes";
             this.menureportes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.menureportes.Click += new System.EventHandler(this.menureportes_Click);
@@ -178,7 +178,7 @@
             this.menucodigodebarras.ImageTransparentColor = System.Drawing.Color.White;
             this.menucodigodebarras.Margin = new System.Windows.Forms.Padding(10);
             this.menucodigodebarras.Name = "menucodigodebarras";
-            this.menucodigodebarras.Size = new System.Drawing.Size(200, 50);
+            this.menucodigodebarras.Size = new System.Drawing.Size(210, 50);
             this.menucodigodebarras.Text = "Código de barras";
             this.menucodigodebarras.Click += new System.EventHandler(this.menucodigodebarras_Click);
             // 
@@ -196,7 +196,7 @@
             this.menuusuarios.ImageTransparentColor = System.Drawing.Color.White;
             this.menuusuarios.Margin = new System.Windows.Forms.Padding(10);
             this.menuusuarios.Name = "menuusuarios";
-            this.menuusuarios.Size = new System.Drawing.Size(122, 50);
+            this.menuusuarios.Size = new System.Drawing.Size(180, 50);
             this.menuusuarios.Text = "Usuarios";
             this.menuusuarios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.menuusuarios.Click += new System.EventHandler(this.menuusuarios_Click);
@@ -208,7 +208,7 @@
             this.menutop.Location = new System.Drawing.Point(0, 0);
             this.menutop.Name = "menutop";
             this.menutop.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menutop.Size = new System.Drawing.Size(917, 72);
+            this.menutop.Size = new System.Drawing.Size(1057, 72);
             this.menutop.TabIndex = 1;
             this.menutop.Text = "menuStrip2";
             // 
@@ -218,7 +218,7 @@
             this.titulo.BackColor = System.Drawing.Color.PaleVioletRed;
             this.titulo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titulo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.titulo.Location = new System.Drawing.Point(297, 20);
+            this.titulo.Location = new System.Drawing.Point(351, 23);
             this.titulo.Name = "titulo";
             this.titulo.Size = new System.Drawing.Size(297, 32);
             this.titulo.TabIndex = 2;
@@ -238,7 +238,7 @@
             this.label2.BackColor = System.Drawing.Color.PaleVioletRed;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(706, 31);
+            this.label2.Location = new System.Drawing.Point(865, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 18);
             this.label2.TabIndex = 4;
@@ -246,10 +246,11 @@
             // 
             // Contenedor
             // 
+            this.Contenedor.BackColor = System.Drawing.Color.MistyRose;
             this.Contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Contenedor.Location = new System.Drawing.Point(0, 146);
             this.Contenedor.Name = "Contenedor";
-            this.Contenedor.Size = new System.Drawing.Size(917, 344);
+            this.Contenedor.Size = new System.Drawing.Size(1057, 345);
             this.Contenedor.TabIndex = 5;
             // 
             // lblusuario
@@ -258,7 +259,7 @@
             this.lblusuario.BackColor = System.Drawing.Color.PaleVioletRed;
             this.lblusuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblusuario.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblusuario.Location = new System.Drawing.Point(787, 31);
+            this.lblusuario.Location = new System.Drawing.Point(946, 34);
             this.lblusuario.Name = "lblusuario";
             this.lblusuario.Size = new System.Drawing.Size(88, 18);
             this.lblusuario.TabIndex = 6;
@@ -269,7 +270,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(917, 490);
+            this.ClientSize = new System.Drawing.Size(1057, 491);
             this.Controls.Add(this.lblusuario);
             this.Controls.Add(this.Contenedor);
             this.Controls.Add(this.label2);
