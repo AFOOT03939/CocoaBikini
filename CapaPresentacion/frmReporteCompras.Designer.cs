@@ -66,7 +66,7 @@
             // 
             // label10
             // 
-            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.BackColor = System.Drawing.Color.LavenderBlush;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(10, 9);
@@ -79,7 +79,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.BackColor = System.Drawing.Color.LavenderBlush;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(24, 19);
             this.label2.Name = "label2";
@@ -108,7 +108,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.BackColor = System.Drawing.Color.LavenderBlush;
             this.label4.Location = new System.Drawing.Point(32, 55);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(68, 13);
@@ -118,7 +118,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.BackColor = System.Drawing.Color.LavenderBlush;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(224, 53);
             this.label3.Name = "label3";
@@ -156,7 +156,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.BackColor = System.Drawing.Color.LavenderBlush;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(411, 56);
             this.label5.Name = "label5";
@@ -166,7 +166,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.Color.LavenderBlush;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(10, 100);
@@ -376,7 +376,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.BackColor = System.Drawing.Color.LavenderBlush;
             this.label11.Location = new System.Drawing.Point(682, 119);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(61, 13);
@@ -387,6 +387,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleVioletRed;
             this.ClientSize = new System.Drawing.Size(1145, 501);
             this.Controls.Add(this.btnexportar);
             this.Controls.Add(this.btnbuscar);

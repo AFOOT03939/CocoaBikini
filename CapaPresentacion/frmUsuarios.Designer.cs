@@ -73,9 +73,10 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.Color.PaleVioletRed;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
@@ -85,57 +86,60 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(27, 54);
+            this.label2.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(28, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 13);
+            this.label2.Size = new System.Drawing.Size(111, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nro Documento:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(27, 102);
+            this.label3.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.label3.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(28, 102);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 13);
+            this.label3.Size = new System.Drawing.Size(126, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nombre Completo:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(27, 148);
+            this.label4.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.label4.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(27, 149);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 13);
+            this.label4.Size = new System.Drawing.Size(54, 18);
             this.label4.TabIndex = 3;
             this.label4.Text = "Correo:";
             // 
             // txtdocumento
             // 
-            this.txtdocumento.Location = new System.Drawing.Point(30, 70);
+            this.txtdocumento.Location = new System.Drawing.Point(30, 76);
             this.txtdocumento.Name = "txtdocumento";
             this.txtdocumento.Size = new System.Drawing.Size(192, 20);
             this.txtdocumento.TabIndex = 4;
             // 
             // txtnombrecompleto
             // 
-            this.txtnombrecompleto.Location = new System.Drawing.Point(30, 118);
+            this.txtnombrecompleto.Location = new System.Drawing.Point(31, 123);
             this.txtnombrecompleto.Name = "txtnombrecompleto";
             this.txtnombrecompleto.Size = new System.Drawing.Size(192, 20);
             this.txtnombrecompleto.TabIndex = 5;
             // 
             // txtcorreo
             // 
-            this.txtcorreo.Location = new System.Drawing.Point(30, 164);
+            this.txtcorreo.Location = new System.Drawing.Point(29, 170);
             this.txtcorreo.Name = "txtcorreo";
             this.txtcorreo.Size = new System.Drawing.Size(192, 20);
             this.txtcorreo.TabIndex = 6;
             // 
             // txtclave
             // 
-            this.txtclave.Location = new System.Drawing.Point(30, 211);
+            this.txtclave.Location = new System.Drawing.Point(31, 217);
             this.txtclave.Name = "txtclave";
             this.txtclave.PasswordChar = '*';
             this.txtclave.Size = new System.Drawing.Size(192, 20);
@@ -144,16 +148,17 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(27, 195);
+            this.label5.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(28, 196);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 13);
+            this.label5.Size = new System.Drawing.Size(81, 18);
             this.label5.TabIndex = 7;
             this.label5.Text = "Contraseña:";
             // 
             // txtconfirmarclave
             // 
-            this.txtconfirmarclave.Location = new System.Drawing.Point(30, 258);
+            this.txtconfirmarclave.Location = new System.Drawing.Point(29, 264);
             this.txtconfirmarclave.Name = "txtconfirmarclave";
             this.txtconfirmarclave.PasswordChar = '*';
             this.txtconfirmarclave.Size = new System.Drawing.Size(192, 20);
@@ -162,20 +167,22 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(27, 242);
+            this.label6.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.label6.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(28, 243);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(111, 13);
+            this.label6.Size = new System.Drawing.Size(146, 18);
             this.label6.TabIndex = 9;
             this.label6.Text = "Confirmar Contraseña:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(27, 291);
+            this.label7.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.label7.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(28, 290);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(26, 13);
+            this.label7.Size = new System.Drawing.Size(33, 18);
             this.label7.TabIndex = 11;
             this.label7.Text = "Rol:";
             // 
@@ -183,7 +190,7 @@
             // 
             this.cborol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cborol.FormattingEnabled = true;
-            this.cborol.Location = new System.Drawing.Point(30, 308);
+            this.cborol.Location = new System.Drawing.Point(30, 311);
             this.cborol.Name = "cborol";
             this.cborol.Size = new System.Drawing.Size(192, 21);
             this.cborol.TabIndex = 12;
@@ -192,7 +199,7 @@
             // 
             this.cboestado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboestado.FormattingEnabled = true;
-            this.cboestado.Location = new System.Drawing.Point(30, 355);
+            this.cboestado.Location = new System.Drawing.Point(30, 359);
             this.cboestado.Name = "cboestado";
             this.cboestado.Size = new System.Drawing.Size(192, 21);
             this.cboestado.TabIndex = 13;
@@ -200,10 +207,11 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(27, 339);
+            this.label8.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.label8.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(28, 338);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 13);
+            this.label8.Size = new System.Drawing.Size(53, 18);
             this.label8.TabIndex = 14;
             this.label8.Text = "Estado:";
             // 
@@ -273,11 +281,11 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(25, 21);
+            this.label9.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.label9.Font = new System.Drawing.Font("Palatino Linotype", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(47, 18);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(144, 25);
+            this.label9.Size = new System.Drawing.Size(165, 28);
             this.label9.TabIndex = 18;
             this.label9.Text = "Detalle Usuario";
             // 
@@ -391,7 +399,7 @@
             // 
             this.label10.BackColor = System.Drawing.Color.White;
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Palatino Linotype", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(288, 33);
             this.label10.Name = "label10";
             this.label10.Padding = new System.Windows.Forms.Padding(2, 0, 0, 0);
@@ -402,7 +410,7 @@
             // 
             // txtid
             // 
-            this.txtid.Location = new System.Drawing.Point(196, 44);
+            this.txtid.Location = new System.Drawing.Point(196, 50);
             this.txtid.Name = "txtid";
             this.txtid.Size = new System.Drawing.Size(25, 20);
             this.txtid.TabIndex = 21;
@@ -413,9 +421,10 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(675, 54);
+            this.label11.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(650, 53);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(61, 13);
+            this.label11.Size = new System.Drawing.Size(77, 18);
             this.label11.TabIndex = 22;
             this.label11.Text = "Buscar por:";
             // 
@@ -474,7 +483,7 @@
             // 
             // txtindice
             // 
-            this.txtindice.Location = new System.Drawing.Point(165, 44);
+            this.txtindice.Location = new System.Drawing.Point(165, 49);
             this.txtindice.Name = "txtindice";
             this.txtindice.Size = new System.Drawing.Size(25, 20);
             this.txtindice.TabIndex = 27;
@@ -485,7 +494,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.Color.LavenderBlush;
             this.ClientSize = new System.Drawing.Size(1155, 503);
             this.Controls.Add(this.txtindice);
             this.Controls.Add(this.btnlimpiarbuscador);
