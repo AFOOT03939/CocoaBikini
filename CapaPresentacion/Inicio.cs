@@ -48,8 +48,6 @@ namespace CapaPresentacion
 
             }
 
-
-
             lblusuario.Text = usuarioActual.NombreCompleto;
         }
 
@@ -57,7 +55,7 @@ namespace CapaPresentacion
         private void AbrirFormulario(IconMenuItem menu, Form formulario) {
 
             if (MenuActivo != null) {
-                MenuActivo.BackColor = Color.White;
+                MenuActivo.BackColor = Color.PaleVioletRed;
             }
             menu.BackColor = Color.Silver;
             MenuActivo = menu;
@@ -70,7 +68,7 @@ namespace CapaPresentacion
             formulario.TopLevel = false;
             formulario.FormBorderStyle = FormBorderStyle.None;
             formulario.Dock = DockStyle.Fill;
-            formulario.BackColor = Color.LightPink;
+            formulario.BackColor = Color.PaleVioletRed;
 
             contenedor.Controls.Add(formulario);
             formulario.Show();
@@ -103,65 +101,20 @@ namespace CapaPresentacion
         {
             AbrirFormulario(menuventas, new frmDetalleVenta());
         }
-
-        private void submenuregistrarcompra_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void submenutverdetallecompra_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void menuclientes_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario((IconMenuItem)sender, new frmClientes());
-        }
-
-        private void menuproveedores_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario((IconMenuItem)sender, new frmProveedores());
-        }
-
-
-
-        private void submenunegocio_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(menumantenedor, new frmNegocio());
-        }
-
-        private void submenureportecompras_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario(menureportes, new frmReporteCompras());
-        }
-
+      
         private void submenureporteventas_Click(object sender, EventArgs e)
         {
             AbrirFormulario(menureportes, new frmReporteVentas());
         }
 
-        private void menuacercade_Click(object sender, EventArgs e)
+        private void MenuAcercaDe_Click(object sender, EventArgs e)
         {
-            mdAcercade md = new mdAcercade();
-            md.ShowDialog();
+            AbrirFormulario((IconMenuItem)sender, new frmAcercade());
         }
 
-        private void btnsalir_Click(object sender, EventArgs e)
+        private void menuSucursales_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Desea salir?", "Mensaje", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) { 
-                this.Close();
-            }
-        }
-
-        private void lblusuario_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menuventas_Click(object sender, EventArgs e)
-        {
-
+            AbrirFormulario((IconMenuItem)sender, new frmSucursales());
         }
     }
 }

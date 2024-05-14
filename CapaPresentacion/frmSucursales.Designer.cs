@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class frmReportes
+    partial class frmSucursales
     {
         /// <summary>
         /// Required designer variable.
@@ -34,21 +34,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(106, 146);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 50.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(190, 204);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(422, 31);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "hola, soy el formulario de reportes";
+            this.label1.Size = new System.Drawing.Size(729, 76);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "soy el menu sucursales";
             // 
-            // frmReportes
+            // frmSucursales
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1184, 561);
             this.Controls.Add(this.label1);
-            this.Name = "frmReportes";
-            this.Text = "frmReportes";
+            this.Name = "frmSucursales";
+            this.Text = "menuSucursales";
             this.ResumeLayout(false);
             this.PerformLayout();
 

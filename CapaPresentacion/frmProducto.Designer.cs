@@ -452,7 +452,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(261, 584);
+            this.label1.Size = new System.Drawing.Size(261, 561);
             this.label1.TabIndex = 28;
             // 
             // btnexportar
@@ -479,7 +479,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1149, 584);
+            this.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.ClientSize = new System.Drawing.Size(1184, 561);
             this.Controls.Add(this.btnexportar);
             this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.dgvdata);

@@ -345,7 +345,7 @@
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(338, 552);
+            this.label1.Size = new System.Drawing.Size(338, 561);
             this.label1.TabIndex = 28;
             // 
             // frmCategoria
@@ -353,7 +353,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ClientSize = new System.Drawing.Size(732, 552);
+            this.ClientSize = new System.Drawing.Size(1184, 561);
             this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.dgvdata);
             this.Controls.Add(this.btnlimpiarbuscador);

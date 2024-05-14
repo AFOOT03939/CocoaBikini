@@ -388,7 +388,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.ClientSize = new System.Drawing.Size(1145, 501);
+            this.ClientSize = new System.Drawing.Size(1184, 561);
             this.Controls.Add(this.btnexportar);
             this.Controls.Add(this.btnbuscar);
             this.Controls.Add(this.btnlimpiarbuscador);
