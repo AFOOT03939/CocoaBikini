@@ -70,7 +70,7 @@ namespace CapaPresentacion
             formulario.TopLevel = false;
             formulario.FormBorderStyle = FormBorderStyle.None;
             formulario.Dock = DockStyle.Fill;
-            formulario.BackColor = Color.SteelBlue;
+            formulario.BackColor = Color.LightPink;
 
             contenedor.Controls.Add(formulario);
             formulario.Show();
@@ -106,12 +106,12 @@ namespace CapaPresentacion
 
         private void submenuregistrarcompra_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(menucompras, new frmCompras(usuarioActual));
+            
         }
 
         private void submenutverdetallecompra_Click(object sender, EventArgs e)
         {
-            AbrirFormulario(menucompras, new frmDetalleCompra());
+            
         }
 
         private void menuclientes_Click(object sender, EventArgs e)
@@ -155,6 +155,11 @@ namespace CapaPresentacion
         }
 
         private void lblusuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuventas_Click(object sender, EventArgs e)
         {
 
         }

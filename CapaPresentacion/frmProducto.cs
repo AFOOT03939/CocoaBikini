@@ -23,13 +23,14 @@ namespace CapaPresentacion
 
         private void frmProducto_Load(object sender, EventArgs e)
         {
+            // Agregar elementos al ComboBox de estado
             cboestado.Items.Add(new OpcionCombo() { Valor = 1, Texto = "Activo" });
             cboestado.Items.Add(new OpcionCombo() { Valor = 0, Texto = "No Activo" });
             cboestado.DisplayMember = "Texto";
             cboestado.ValueMember = "Valor";
             cboestado.SelectedIndex = 0;
 
-
+            // Agregar elementos al ComboBox de categoría
             List<Categoria> listacategoria = new CN_Categoria().Listar();
 
             foreach (Categoria item in listacategoria)
@@ -38,12 +39,16 @@ namespace CapaPresentacion
             }
             cbocategoria.DisplayMember = "Texto";
             cbocategoria.ValueMember = "Valor";
-            cbocategoria.SelectedIndex = 0;
 
+            // Verificar si hay elementos en el ComboBox de categoría antes de establecer el índice seleccionado
+            if (cbocategoria.Items.Count > 0)
+            {
+                cbocategoria.SelectedIndex = 0;
+            }
 
+            // Agregar opciones de búsqueda al ComboBox de búsqueda
             foreach (DataGridViewColumn columna in dgvdata.Columns)
             {
-
                 if (columna.Visible == true && columna.Name != "btnseleccionar")
                 {
                     cbobusqueda.Items.Add(new OpcionCombo() { Valor = columna.Name, Texto = columna.HeaderText });
@@ -51,33 +56,35 @@ namespace CapaPresentacion
             }
             cbobusqueda.DisplayMember = "Texto";
             cbobusqueda.ValueMember = "Valor";
-            cbobusqueda.SelectedIndex = 0;
 
+            // Verificar si hay elementos en el ComboBox de búsqueda antes de establecer el índice seleccionado
+            if (cbobusqueda.Items.Count > 0)
+            {
+                cbobusqueda.SelectedIndex = 0;
+            }
 
-
-            //MOSTRAR TODOS LOS USUARIOS
+            //MOSTRAR TODOS LOS PRODUCTOS
             List<Producto> lista = new CN__Producto().Listar();
 
             foreach (Producto item in lista)
             {
-
                 dgvdata.Rows.Add(new object[] {
-                    "",
-                    item.IdProducto,
-                    item.Codigo,
-                    item.Nombre,
-                    item.Descripcion,
-                    item.oCategoria.IdCategoria,
-                    item.oCategoria.Descripcion,
-                    item.Stock,
-                    item.PrecioCompra,
-                    item.PrecioVenta,
-                    item.Estado == true ? 1 : 0 ,
-                    item.Estado == true ? "Activo" : "No Activo"
-                });
+            "",
+            item.IdProducto,
+            item.Codigo,
+            item.Nombre,
+            item.Descripcion,
+            item.oCategoria.IdCategoria,
+            item.oCategoria.Descripcion,
+            item.Stock,
+            item.PrecioCompra,
+            item.PrecioVenta,
+            item.Estado == true ? 1 : 0 ,
+            item.Estado == true ? "Activo" : "No Activo"
+        });
             }
-
         }
+
 
         private void btnguardar_Click(object sender, EventArgs e)
         {

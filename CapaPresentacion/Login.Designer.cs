@@ -70,9 +70,9 @@
             this.label3.ForeColor = System.Drawing.Color.Snow;
             this.label3.Location = new System.Drawing.Point(260, 283);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 13);
+            this.label3.Size = new System.Drawing.Size(82, 13);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Nro Documento:";
+            this.label3.Text = "No Documento:";
             // 
             // label4
             // 
