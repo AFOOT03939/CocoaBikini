@@ -42,7 +42,6 @@ namespace CapaDatos
                                 Descripcion = dr["Descripcion"].ToString(),
                                 oCategoria = new Categoria() { IdCategoria = Convert.ToInt32(dr["IdCategoria"]), Descripcion = dr["DescripcionCategoria"].ToString() },
                                 Stock = Convert.ToInt32(dr["Stock"].ToString()),
-                                PrecioCompra = Convert.ToDecimal(dr["PrecioCompra"].ToString()),
                                 PrecioVenta = Convert.ToDecimal(dr["PrecioVenta"].ToString()),
                                 Estado = Convert.ToBoolean(dr["Estado"])
                             });

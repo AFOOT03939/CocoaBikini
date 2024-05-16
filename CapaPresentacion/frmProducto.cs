@@ -316,9 +316,11 @@ namespace CapaPresentacion
                         dt.Columns.Add(columna.HeaderText, typeof(string));
                 }
 
-                foreach (DataGridViewRow row in dgvdata.Rows) {
+                foreach (DataGridViewRow row in dgvdata.Rows) { /* NO SE PERO AQUI HAY UN ERRORRRRRRRRRRR */
                     if (row.Visible)
                         dt.Rows.Add(new object[] {
+
+                            row.Cells[1].Value.ToString(),
                             row.Cells[2].Value.ToString(),
                             row.Cells[3].Value.ToString(),
                             row.Cells[4].Value.ToString(),
@@ -326,7 +328,7 @@ namespace CapaPresentacion
                             row.Cells[7].Value.ToString(),
                             row.Cells[8].Value.ToString(),
                             row.Cells[9].Value.ToString(),
-                            row.Cells[11].Value.ToString(),
+                            row.Cells[10].Value.ToString(),
 
                         });
                 }

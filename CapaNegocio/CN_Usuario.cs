@@ -56,7 +56,7 @@ namespace CapaNegocio
 
             if (obj.Documento == "")
             {
-                Mensaje += "Es necesario el documento del usuario\n";
+                Mensaje += "Es necesario el número de usuario\n";
             }
 
             if (obj.NombreCompleto == "")
@@ -66,7 +66,7 @@ namespace CapaNegocio
 
             if (obj.Clave == "")
             {
-                Mensaje += "Es necesario la clave del usuario\n";
+                Mensaje += "Es necesaria la contraseña del usuario\n";
             }
 
 

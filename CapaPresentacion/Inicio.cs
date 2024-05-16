@@ -55,9 +55,9 @@ namespace CapaPresentacion
         private void AbrirFormulario(IconMenuItem menu, Form formulario) {
 
             if (MenuActivo != null) {
-                MenuActivo.BackColor = Color.PaleVioletRed;
+                MenuActivo.BackColor = Color.LavenderBlush;
             }
-            menu.BackColor = Color.Silver;
+            menu.BackColor = Color.Turquoise;
             MenuActivo = menu;
 
             if (FormularioActivo != null) {
