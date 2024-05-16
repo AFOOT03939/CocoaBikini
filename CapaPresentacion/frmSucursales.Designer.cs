@@ -243,7 +243,8 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(175, 101);
             this.label12.TabIndex = 27;
-            this.label12.Text = "Personal a cargo:\r\n\r\nEunice Steffi Mendoza Galindo\r\n\r\nContacto: 33   3033  4306";
+            this.label12.Text = "Personal a cargo:\r\n\r\nEunice Steffi Mendoza Galindo\r\n\r\nContacto: +52  33  3033  43" +
+    "06";
             // 
             // label9
             // 
@@ -253,7 +254,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(175, 101);
             this.label9.TabIndex = 28;
-            this.label9.Text = "Personal a cargo:\r\n\r\nEunice Steffi Mendoza Galindo\r\n\r\nContacto: 33   3033  4306";
+            this.label9.Text = "Personal a cargo:\r\n\r\nSusana Galindo Ortiz\r\n\r\nContacto: ‎+52  33  4499  5245";
             // 
             // label10
             // 
@@ -263,7 +264,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(175, 101);
             this.label10.TabIndex = 29;
-            this.label10.Text = "Personal a cargo:\r\n\r\nEunice Steffi Mendoza Galindo\r\n\r\nContacto: 33   3033  4306";
+            this.label10.Text = "Personal a cargo:\r\n\r\nDavid Mendoza Castro \r\n\r\nContacto: ‎+52  37  3106  1028";
             // 
             // label11
             // 
@@ -273,7 +274,8 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(175, 101);
             this.label11.TabIndex = 30;
-            this.label11.Text = "Personal a cargo:\r\n\r\nEunice Steffi Mendoza Galindo\r\n\r\nContacto: 33   3033  4306";
+            this.label11.Text = "Personal a cargo:\r\n\r\nCindy Loida Mendoza Galindo\r\n\r\nContacto: +52  392  196  4872" +
+    "";
             // 
             // frmSucursales
             // 

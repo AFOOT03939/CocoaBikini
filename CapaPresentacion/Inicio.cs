@@ -116,5 +116,10 @@ namespace CapaPresentacion
         {
             AbrirFormulario((IconMenuItem)sender, new frmSucursales());
         }
+
+        private void añadirProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario(menumantenedor, new frmCompras());
+        }
     }
 }
